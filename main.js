@@ -14,5 +14,6 @@ gridButton_list.forEach((item) => {
   console.log(item);
   const gridButton_Element = item.addEventListener("click", () => {
     item.classList.toggle("grid_boder");
+    console.log(item.dataset.gridId)
   });
 });
