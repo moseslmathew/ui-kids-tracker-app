@@ -146,15 +146,15 @@ section.hero {
 }
 
 .wrapper {
-  margin: 2rem 2rem;
-  max-width: 940px;
+  /* margin: 2rem 2rem; */
+  /* max-width: 940px; */
 }
 
 .wrapper div {
   /* border: 2px solid rgb(233 171 88); */
   border-radius: 5px;
   background-color: rgba(233 171 88 / 0.5);
-  padding: 1em;
+  padding: 0.5rem;
   color: #d9480f;
 }
 
@@ -166,11 +166,16 @@ section.hero {
   gap: 10px;
 }
 
-
-.grid_boder{
+.grid_boder {
   border: 2px solid green;
 }
 
+.grid-item img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
