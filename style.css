@@ -12,6 +12,12 @@
   cursor: pointer;
   width: fit-content;
   width: 12rem;
+  padding: 1rem;
+}
+
+.logo:hover{
+  border: 1.5px solid white;
+
 }
 
 body {
@@ -19,9 +25,15 @@ body {
   background-image: url("./public/Assets/img1.jpg");
   background-color: #55d6aa;
   background-size: cover;
-  overflow: hidden;
+  overflow: auto;
   background-position: center;
+  scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 
 li {
   list-style-type: none;
@@ -192,11 +204,24 @@ section.hero {
   .dropdown_menu {
     display: block;
   }
+  
+  section.hero {
+    color: red;    
+  }
+
+  body{
+    background-color: lightblue;
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
 }
 
 @media (max-width: 576px) {
   .dropdown_menu {
     left: 2rem;
     width: unset;
-  }
+  } 
+
 }
